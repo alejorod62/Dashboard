@@ -26,7 +26,7 @@ function NavBar () {
                 <li class="nav-item dropdown no-arrow">
                     <a class="nav-link dropdown-toggle" href="/" id="userDropdown">
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">Criptolatino</span>
-                        <img class="img-profile rounded-circle" src="logo.png" width="60"/>
+                        <img class="img-profile rounded-circle" src={"http://localhost:3002/img/logo.png"} width="60"/>
                     </a>
                 </li>
 

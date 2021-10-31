@@ -30,8 +30,8 @@ function App() {
               </div>
 
               <div class="row">
+                <UltimoCurso/> 
                 <Temas2/>
-              <UltimoCurso/> 
               </div>
               
             </div>
