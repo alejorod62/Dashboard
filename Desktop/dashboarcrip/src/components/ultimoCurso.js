@@ -1,31 +1,17 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const urlApi = 'http://localhost:3002/api/courses'
 
 function UltimoCurso () {
 
-{/*   const [curso, setCurso] = useState();
-
- let traerData = (urlApi) => {
-        fetch(urlApi)
-        .then(response => response.json() )
-        .then(data =>  setCurso( {curso: data.total[data.total.lenght-1]} ))
-        .catch(e =>console.log(e));
-    }    
-*/}
     const [curso, setCurso] = useState();
     
     useEffect( () => { 
         fetch(urlApi)
         .then(response => response.json() )
-        .then(data =>  setCurso( data.total[data.total.lenght-1]))
+        .then(data =>  setCurso(data.data[1].nombre))
         .catch(e =>console.log(e)); }, [] )
     
-    
-    
-    
-console.log(curso)
-
     return (
 
         <div class="col-lg-6 mb-4">
@@ -35,10 +21,9 @@ console.log(curso)
                 </div>
                 <div class="card-body">
                     <div class="text-center">
-                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src={"http://localhost/3002/img" + curso.nombreImagen} alt="image dummy"/>
                     </div>
-                    <p>{curso.nombre}</p>
-                    <a target="_blank" rel="nofollow" href="/">Ver el detalle del producto</a>
+                    <p>{curso}</p>
+                    <a target="_blank" rel="nofollow" href="http://localhost:3002/courses/details/1">Ver el detalle del producto</a>
                 </div>
             </div>
         </div>

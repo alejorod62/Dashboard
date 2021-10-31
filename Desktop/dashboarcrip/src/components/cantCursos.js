@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const urlApi = 'http://localhost:3002/api/courses/count'
 

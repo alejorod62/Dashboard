@@ -2,10 +2,10 @@ import './assets/css/app.css';
 import SideBar from '../src/components/sideBar';
 import NavBar from '../src/components/navBar';
 import CantCursos from '../src/components/cantCursos';
-import MontoDB from '../src/components/montoDB';
 import CantUsuarios from '../src/components/cantUsuarios';
 import UltimoCurso from '../src/components/ultimoCurso';
 import Temas from '../src/components/temas';
+import Temas2 from '../src/components/temas2';
 import Footer from '../src/components/footer';
 
 
@@ -30,8 +30,8 @@ function App() {
               </div>
 
               <div class="row">
-              { /*  <Temas/>
-                <UltimoCurso/> */}
+                <Temas2/>
+              <UltimoCurso/> 
               </div>
               
             </div>
