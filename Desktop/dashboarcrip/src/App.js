@@ -4,6 +4,7 @@ import NavBar from '../src/components/navBar';
 import CantCursos from '../src/components/cantCursos';
 import CantUsuarios from '../src/components/cantUsuarios';
 import UltimoCurso from '../src/components/ultimoCurso';
+import UltimoUsuario from '../src/components/ultimoUsuario';
 import Temas from '../src/components/temas';
 import Temas2 from '../src/components/temas2';
 import Footer from '../src/components/footer';

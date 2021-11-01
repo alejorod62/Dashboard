@@ -4,14 +4,56 @@ const urlApi = 'http://localhost:3002/api/topics'
 
 function Temas2() { 
         
-    let [listaTemas, setTemas] = useState();
+    let [tema1, setTema1] = useState();
 
     useEffect( () => { 
         fetch(urlApi)
         .then(response => response.json() )
-        .then(data =>  setTemas ( data.data[0].titulo))
+        .then(data =>  setTema1 ( data.data[0].titulo))
         .catch(e =>console.log(e)); }, [] )
 
+    let [tema2, setTema2] = useState();
+
+    useEffect( () => { 
+        fetch(urlApi)
+        .then(response => response.json() )
+        .then(data =>  setTema2 ( data.data[1].titulo))
+        .catch(e =>console.log(e)); }, [] )
+
+    let [tema3, setTema3] = useState();
+
+    useEffect( () => { 
+        fetch(urlApi)
+        .then(response => response.json() )
+        .then(data =>  setTema3 ( data.data[2].titulo))
+        .catch(e =>console.log(e)); }, [] )
+
+    let [tema4, setTema4] = useState();
+
+    useEffect( () => { 
+        fetch(urlApi)
+        .then(response => response.json() )
+        .then(data =>  setTema4 ( data.data[3].titulo))
+        .catch(e =>console.log(e)); }, [] )
+
+
+    let [tema5, setTema5] = useState();
+
+    useEffect( () => { 
+        fetch(urlApi)
+        .then(response => response.json() )
+        .then(data =>  setTema5 ( data.data[4].titulo))
+        .catch(e =>console.log(e)); }, [] )
+
+
+        let [tema6, setTema6] = useState();
+
+        useEffect( () => { 
+            fetch(urlApi)
+            .then(response => response.json() )
+            .then(data =>  setTema6 ( data.data[5].titulo))
+            .catch(e =>console.log(e)); }, [] )
+        
     return (
         
         <div class="col-lg-6 mb-4">						
@@ -24,42 +66,42 @@ function Temas2() {
                         <div class="col-lg-6 mb-4">
                             <div class="card bg-info text-white shadow">
                                 <div class="card-body">
-                                    {listaTemas}
+                                    {tema1}
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-4">
                             <div class="card bg-info text-white shadow">
                                 <div class="card-body">
-                                    Category 02
+                                {tema2}
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-4">
                             <div class="card bg-info text-white shadow">
                                 <div class="card-body">
-                                    Category 03
+                                {tema3}
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-4">
                             <div class="card bg-info text-white shadow">
                                 <div class="card-body">
-                                    Category 04
+                                {tema4}
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-4">
                             <div class="card bg-info text-white shadow">
                                 <div class="card-body">
-                                    Category 05
+                                {tema5}
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-4">
                             <div class="card bg-info text-white shadow">
                                 <div class="card-body">
-                                    Category 06
+                                {tema6}
                                 </div>
                             </div>
                         </div>
